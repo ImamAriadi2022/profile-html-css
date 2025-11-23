@@ -125,64 +125,170 @@ header {
     box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
 }
 
-/* Skills Section */
-.skills-section {
+/* About Section */
+.about-section {
     padding: 4rem 0;
     background-color: white;
 }
 
-.skills-section h2 {
+.about-section h2 {
     text-align: center;
     margin-bottom: 2rem;
     color: #2c3e50;
     font-size: 2.5rem;
 }
 
-.skills-list {
+.about-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    list-style: none;
-    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.skills-list li {
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.interests-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    list-style: none;
+}
+
+.interests-list li {
     background-color: #ecf0f1;
     padding: 1rem 1.5rem;
     border-radius: 10px;
-    text-align: center;
     font-weight: bold;
     color: #2c3e50;
     border-left: 4px solid #3498db;
     transition: transform 0.3s ease;
 }
 
-.skills-list li:hover {
+.interests-list li:hover {
     transform: translateY(-3px);
     background-color: #d5dbdb;
 }
 
-/* Articles Section */
-.articles-section {
+/* Members Section */
+.members-section {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background-color: #ecf0f1;
 }
 
-.articles-section h2 {
+.members-section h2 {
     text-align: center;
     margin-bottom: 3rem;
     color: #2c3e50;
     font-size: 2.5rem;
 }
 
-.article-grid {
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.member-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.member-role {
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.member-desc {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.member-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.member-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.blog-intro {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-bottom: 3rem;
 }
 
-.article-card {
+.blog-card {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -190,9 +296,43 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.article-card:hover {
+.blog-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.blog-cta {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-cta p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-link-btn {
+    display: inline-block;
+    background-color: #9b59b6;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.blog-link-btn:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3);
 }
 
 .article-card h3 {
@@ -236,12 +376,58 @@ header {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.member-profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 15px;
+    color: white;
+}
+
+.member-profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.member-profile-info h1 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.member-profile-role {
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.member-profile-status {
+    color: #bdc3c7;
+    font-size: 1rem;
+}
+
 .article-content h1 {
     color: #2c3e50;
     margin-bottom: 2rem;
     font-size: 2.5rem;
     border-bottom: 3px solid #3498db;
     padding-bottom: 1rem;
+}
+
+.article-content h2 {
+    color: #2c3e50;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
 }
 
 .article-content p {
@@ -328,8 +514,9 @@ footer p {
         height: 120px;
     }
     
-    .skills-section h2,
-    .articles-section h2 {
+    .about-section h2,
+    .blog-section h2,
+    .members-section h2 {
         font-size: 2rem;
     }
     
@@ -341,12 +528,20 @@ footer p {
         flex-direction: column;
     }
     
-    .skills-list {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .blog-grid,
+    .members-grid {
         grid-template-columns: 1fr;
     }
     
-    .article-grid {
-        grid-template-columns: 1fr;
+    .member-profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
 }
 

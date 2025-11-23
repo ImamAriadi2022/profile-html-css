@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactBtn = document.getElementById('contactBtn');
     if (contactBtn) {
         contactBtn.addEventListener('click', function() {
-            alert('Halo! Terima kasih telah mengunjungi profil saya. Anda dapat menghubungi saya melalui email: ahmad.rizki@example.com atau LinkedIn: Ahmad Rizki');
+            alert('Halo! Terima kasih telah mengunjungi profil Kelompok 6. Anda dapat menghubungi kami melalui ketua kelompok Yosinta Ariyani di email: kelompok6.pti@example.com');
         });
     }
 
@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const readFullBtn = document.getElementById('readFullBtn');
     if (readFullBtn) {
         readFullBtn.addEventListener('click', function() {
-            window.open('https://mahasiswaptipunyahobiunik.blogspot.com/', '_blank');
+            window.open('https://mahasiswiptipunyahobiunik.blogspot.com/', '_blank');
         });
     }
 
-    // Efek hover pada kartu artikel
-    const articleCards = document.querySelectorAll('.article-card');
-    articleCards.forEach(card => {
+    // Efek hover pada kartu blog
+    const blogCards = document.querySelectorAll('.blog-card');
+    blogCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-5px)';
         });
@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Efek hover pada skill items
-    const skillItems = document.querySelectorAll('.skills-list li');
-    skillItems.forEach(item => {
+    // Efek hover pada interest items
+    const interestItems = document.querySelectorAll('.interests-list li');
+    interestItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
             this.style.backgroundColor = '#3498db';
             this.style.color = 'white';
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observasi elemen-elemen yang akan dianimasi
-    const animatedElements = document.querySelectorAll('.article-card, .skills-list li, .profile-card');
+    const animatedElements = document.querySelectorAll('.blog-card, .interests-list li, .profile-card, .blog-cta, .member-card');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
