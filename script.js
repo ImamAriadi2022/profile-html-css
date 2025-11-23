@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const readFullBtn = document.getElementById('readFullBtn');
     if (readFullBtn) {
         readFullBtn.addEventListener('click', function() {
-            window.open('https://mahasiswiptipunyahobiunik.blogspot.com/', '_blank');
+            window.open('https://mahasiswiptipunyahobiunik.blogspot.com/2025/11/1-yosinta-ariyani-cewek-capricorn.html', '_blank');
         });
     }
 

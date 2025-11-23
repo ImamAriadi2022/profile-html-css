@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeni Anggraini - Si Introvert Pecinta Mangambar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Kelompok 6 PTI</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">Tentang Kelompok</a></li>
+                    <li><a href="index.html#members">Anggota</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <article>
+                <div class="member-profile-header">
+                    <img src="https://via.placeholder.com/150x150/2ecc71/white?text=JA" alt="Jeni Anggraini" class="member-profile-photo">
+                    <div class="member-profile-info">
+                        <h1>Jeni Anggraini</h1>
+                        <p class="member-profile-role">Si Introvert Pecinta Menggambar</p>
+                        <p class="member-profile-status">Anggota Kelompok 6 - Mahasiswa PTI</p>
+                    </div>
+                </div>
+
+                <h2>Tentang Jeni</h2>
+                <p>
+                    Halo semua! Perkenalkan, saya Jeni Anggraini. Mungkin saya terlihat pendiam dan introvert, tapi jangan salah - 
+                    di balik sifat introvert saya, tersimpan passion yang besar dalam dunia seni, khususnya menggambar. 
+                    Sebagai anggota Kelompok 6, saya selalu berusaha memberikan kontribusi terbaik melalui kemampuan kreatif yang saya miliki.
+                </p>
+
+                <h2>Kepribadian Introvert yang Kreatif</h2>
+                <p>
+                    Sebagai seorang introvert, saya memang lebih nyaman menghabiskan waktu sendiri atau dalam kelompok kecil. 
+                    Tapi jangan salah sangka, introvert bukan berarti anti-sosial! Saya justru sangat suka mengamati dan mendengarkan, 
+                    yang membuat saya bisa memahami karakter orang-orang di sekitar dengan baik. Sifat ini juga yang membantu saya 
+                    dalam menggambar karakter dan ekspresi yang lebih hidup.
+                </p>
+
+                <h2>Passion dalam Menggambar</h2>
+                <p>
+                    Menggambar adalah dunia saya! Sejak kecil, saya sudah suka menggambar berbagai hal - mulai dari pemandangan, 
+                    karakter anime, portrait, sampai ilustrasi digital. Yang paling saya suka adalah menggambar karakter dengan 
+                    ekspresi yang unik. Saya juga mulai belajar digital art dan sangat tertarik dengan concept art untuk game 
+                    dan animasi. Siapa tahu suatu hari nanti bisa jadi character designer!
+                </p>
+
+                <h2>Peran dalam Kelompok 6</h2>
+                <p>
+                    Meskipun introvert, saya sangat menikmati bekerja sama dengan teman-teman di Kelompok 6. Saya biasanya 
+                    bertanggung jawab untuk dokumentasi dan administrasi kelompok karena saya teliti dan suka dengan hal-hal 
+                    yang terorganisir. Plus, kalau ada project yang butuh elemen visual atau design, saya selalu siap membantu! 
+                    Teman-teman juga sering minta dibuatkan ilustrasi atau logo untuk tugas-tugas mereka.
+                </p>
+
+                <h2>Mimpi dan Cita-cita</h2>
+                <p>
+                    Cita-cita saya adalah menjadi seorang illustrator profesional yang bisa bekerja di industri kreatif, 
+                    terutama di bidang pendidikan dan teknologi. Saya ingin menciptakan materi pembelajaran yang visual dan 
+                    menarik menggunakan ilustrasi dan desain grafis. Bayangkan kalau buku pelajaran atau aplikasi edukasi 
+                    punya ilustrasi yang menarik - pasti belajar jadi lebih fun dan mudah dipahami!
+                </p>
+
+                <div class="article-actions">
+                    <button id="readFullBtn" class="full-article-btn">Baca artikel lengkap di blog</button>
+                    <a href="index.html" class="back-btn">Kembali ke Halaman Utama</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kelompok 6 PTI. Semua hak dilindungi.</p>
+            <p>Profil Jeni Anggraini - Si Introvert Pecinta Menggambar</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '0';
+            setTimeout(function() {
+                document.body.style.transition = 'opacity 0.5s ease-in';
+                document.body.style.opacity = '1';
+            }, 100);
+
+            const readFullBtn = document.getElementById('readFullBtn');
+            if (readFullBtn) {
+                readFullBtn.addEventListener('click', function() {
+                    window.open('https://mahasiswiptipunyahobiunik.blogspot.com/2025/11/3-jeni-anggraini-si-introvert-pecinta.html', '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
